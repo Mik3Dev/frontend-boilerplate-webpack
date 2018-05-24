@@ -1,9 +1,53 @@
-body {
-	background-color: red;
+// Variables
+$primary-color: #008CBA;
 
-	h1 {
-		color: #AAA;
-		border: black 1px solid;
-		border-radius: 5px;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #777;
+}
+
+div.box {
+	width: 85%;
+	margin: 0 auto;
+	height: 90vh;
+	text-align: center;
+
+	h1.title {
+		padding-top: 6em;
+	}
+	p.text {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	button.button {
+		border: 0 solid #fff;
+		color: #fff;
+		background-color: $primary-color;
+		padding: 1em 3em;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		border-radius: 4px;  
+		transition-duration: 0.2s;
+
+		&:hover {
+			border: 1px solid $primary-color;
+			color: $primary-color;
+			background-color: #fff;
+		}
+	}
+
+	p.small {
+		padding-top: 1em;
+		font-size: 90%;
 	}
 }
