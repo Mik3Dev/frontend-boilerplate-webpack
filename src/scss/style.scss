@@ -1,53 +1,43 @@
-// Variables
-$primary-color: #008CBA;
-
-* {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-	font-family: sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.7;
-	color: #777;
+	line-height: 1;
 }
-
-div.box {
-	width: 85%;
-	margin: 0 auto;
-	height: 90vh;
-	text-align: center;
-
-	h1.title {
-		padding-top: 6em;
-	}
-	p.text {
-		width: 80%;
-		margin: 0 auto;
-	}
-
-	button.button {
-		border: 0 solid #fff;
-		color: #fff;
-		background-color: $primary-color;
-		padding: 1em 3em;
-		margin-top: 2em;
-		margin-bottom: 1em;
-		border-radius: 4px;  
-		transition-duration: 0.2s;
-
-		&:hover {
-			border: 1px solid $primary-color;
-			color: $primary-color;
-			background-color: #fff;
-		}
-	}
-
-	p.small {
-		padding-top: 1em;
-		font-size: 90%;
-	}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
