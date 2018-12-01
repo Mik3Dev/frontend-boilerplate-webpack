@@ -1,5 +1,6 @@
 const merge = require('webpack-merge');
 const common = require('./webpack.config.common');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const dev = merge(common, {
 	mode: 'development',
@@ -7,7 +8,7 @@ const dev = merge(common, {
 	devServer: {
 		contentBase: './dist'
 	}
-});
+})
 
 dev.module.rules.push(
 	{
@@ -26,5 +27,11 @@ dev.module.rules.push(
 		]
 	}
 )
+
+dev.plugins.push(
+	new HtmlWebpackPlugin({
+		filename: 'index.html',
+		template: './src/index.html'
+	}));
 
 module.exports = dev;
